@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="component-container">
+      <div class="slider-container">
+        <img
+          src="./images/chad-kirchoff-pcwVJCSq5_k-unsplash.jpg"
+          alt=""
+          id="img0"
+          class="img"
+        />
+
+        <img
+          src="./images/courtney-cook-MED-pO6Y7JE-unsplash.jpg"
+          alt=""
+          id="img1"
+          class="img hidden"
+        />
+        <img
+          src="./images/meritt-thomas-SWt1dHle1eA-unsplash.jpg"
+          alt=""
+          id="img2"
+          class="img hidden"
+        />
+        <img
+          src="./images/oli-woodman-ol1dX9NkjEI-unsplash.jpg"
+          alt=""
+          id="img3"
+          class="img hidden"
+        />
+        <img
+          src="./images/robin-vet-q6LFMQ6wVZ0-unsplash.jpg"
+          alt=""
+          id="img4"
+          class="img hidden"
+        />
+        <img
+          src="./images/vita-leonis-36dXVB6B6uU-unsplash.jpg"
+          alt=""
+          id="img5"
+          class="img hidden"
+        />
+      </div>
+      <div class="pagination-content">
+        <button class="btn btn--left" id="btn--left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+
+        <a href="#" class="page-link page-link--current" id="btn0">1</a>
+        <a href="#" class="page-link" id="btn1">2</a>
+        <a href="#" class="page-link" id="btn2">3</a>
+        <a href="#" class="page-link" id="btn3">4</a>
+        <a href="#" class="page-link" id="btn4">5</a>
+        <!-- <span class="dots">...</span> -->
+        <a href="#" class="page-link" id="btn5">6</a>
+
+        <button class="btn btn--right" id="btn--right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <button class="turn-on-slideshow">Turn On Slideshow</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

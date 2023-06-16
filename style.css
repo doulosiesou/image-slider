@@ -1,0 +1,153 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+/*    COLOR PALLET
+      https://www.colorhunt.co/palette/425f57749f82a8e890cfff8d
+      #425F57
+      #087f5b
+      #749F82
+      #A8E890
+      #CFFF8D
+
+      GRAY SCALE PALLET
+      https://yeun.github.io/open-color/
+      ##343a40 
+      #495057 GRAY 7
+      #adb5bd GRAY 5
+      #ced4da GRAY 4
+      #dee2e6 GRAY 3
+      #f1f3f5 GRAY 1
+      
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* PAGINATION SECTION */
+/* ------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+.pagination-content {
+  font-size: 18px;
+  /* margin-top: 20px; */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  background: none;
+  border: 1px solid #087f5b;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+  z-index: 1;
+}
+
+.btn--left:hover,
+.btn--right:hover {
+  background-color: #087f5b;
+}
+
+.btn--left:hover .btn-icon,
+.btn--right:hover .btn-icon {
+  stroke: #fff;
+}
+
+.page-link:link,
+.page-link:visited {
+  font-size: 16px;
+  color: #343a40;
+  text-decoration: none;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+.dots {
+  color: #868e96;
+}
+
+/* ------------------------ */
+/* SLIDER SECTION */
+/* ------------------------ */
+
+.component-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  width: 1080px;
+  height: 540px;
+  background-color: #cfff8d17;
+  border: 5px groove #adb5bd;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.turn-on-slideshow {
+  width: 300px;
+  height: auto;
+
+  background-color: #f1f3f5;
+  color: #425f57;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 255, 0.2);
+}
+
+.img {
+  object-fit: contain;
+  animation: 1s opacity;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.img.hidden {
+  display: none;
+}

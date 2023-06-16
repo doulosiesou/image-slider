@@ -1,0 +1,4 @@
+Image slider to-do's 
+Get arrows to advance slide backwards or forwards 1 slide
+Transition the image 'sliding' it in from left to right
+Set the slider on a timer, say 3 seconds to slide 
